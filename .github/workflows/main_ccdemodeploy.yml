@@ -67,7 +67,3 @@ jobs:
           app-name: 'ccdemodeploy'
           slot-name: 'Production'
       
-      - name: Set startup command
-        run: |
-          az webapp config set -n ccdemodeploy -g Test_Deploy --startup-file "uvicorn main:app --host 0.0.0.0 --port 8000"
-          
